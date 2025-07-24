@@ -1,3 +1,16 @@
+import Head from 'next/head';
+import BookingForm from '../components/BookingForm';
+
 export default function Home() {
-  return <h1>Welcome to Booking Form V1 - Next.js!</h1>;
+  return (
+    <>
+      <Head>
+        <title>Booking Form</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <main>
+        <BookingForm />
+      </main>
+    </>
+  );
 }
